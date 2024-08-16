@@ -51,8 +51,8 @@ public class magicSquare {
         arrCheck[arrCheckPos++] = altDiagSum;
 
         int flag = 1;
-        for(int i=0;i<(n*2+2 - 1);i++){
-            if(arrCheck[i]!=arrCheck[i+1]){
+        for(int i=1;i<(n*2+2);i++){
+            if(arrCheck[i-1]!=arrCheck[i]){
                 flag=0;
                 break;
             }
