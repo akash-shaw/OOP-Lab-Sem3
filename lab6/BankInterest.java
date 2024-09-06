@@ -29,7 +29,7 @@ class AXIS extends Bank {
     }
 }
 
-public class Quo3 {
+public class BankInterest {
     public static void main(String[] args) {
         // Create bank objects using dynamic method dispatch
         Bank sbi = new SBI();
