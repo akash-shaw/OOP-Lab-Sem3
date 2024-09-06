@@ -110,8 +110,7 @@ Balance: 5000.0
 Amount deposited: 1000.0
 Interest added: 240.0
 Amount withdrawn: 2000.0
-Balance: 5240.0
-
+Balance: 4240.0
 Balance: 2000.0
 Amount withdrawn: 1500.0
 Penalty imposed: 50.0
