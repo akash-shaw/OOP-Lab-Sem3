@@ -90,7 +90,6 @@ Name: Alice
 Age: 18
 Semester: 1
 Fees: 50000.0
-
 Registration Number: UG102
 Name: Bob
 Age: 19
@@ -103,7 +102,6 @@ Name: Charlie
 Age: 22
 Semester: 1
 Fees: 70000.0
-
 Registration Number: PG202
 Name: David
 Age: 23
