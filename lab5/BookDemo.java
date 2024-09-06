@@ -1,9 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
-
+import java.util.*;
 class Book {
     private String title;
     private String author;
@@ -35,7 +30,7 @@ class Book {
     }
 }
 
-public class Main {
+public class BookDemo {
     public static void main(String[] args) {
         // Creating a list of books
         List<Book> books = new ArrayList<>();
