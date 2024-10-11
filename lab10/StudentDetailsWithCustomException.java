@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 // Step 1: Create a user-defined exception class
 class InvalidMarksException extends Exception {
     // Constructor that accepts a message
@@ -7,7 +10,7 @@ class InvalidMarksException extends Exception {
     }
 }
 
-import java.util.Scanner;
+
 
 public class StudentDetailsWithCustomException {
     public static void main(String[] args) {
