@@ -71,10 +71,14 @@ public class AreaOfFigure {
         System.out.println("Area = "+ fig2.calculateArea());
 
         System.out.println("---Triangle---");
-        System.out.print("Side1: ");
-        int width = sc.nextInt();
-        System.out.print("Breadth: ");
-        int breadth = sc.nextInt();
+        System.out.print("Sides: ");
+        int side1 = sc.nextInt();
+        int side2 = sc.nextInt();
+        int side3 = sc.nextInt();
+
+        Triangle fig3 = new Triangle(side1, side2, side3);
+
+        System.out.println("Area = "+ fig3.calculateArea());
 
         sc.close();
     }
