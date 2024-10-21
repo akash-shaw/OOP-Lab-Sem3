@@ -31,6 +31,22 @@ class Circle implements Figure{
     }
 }
 
+class Triangle implements Figure{
+    private int side1, side2, side3;
+
+    Triangle(int side1, int side2,int side3){
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+
+    public double calculateArea(){
+        double s = (double)(side1+side2+side3)/2;
+        double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
+        return area;
+    }
+}
+
 public class AreaOfFigureInterface {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -52,6 +68,16 @@ public class AreaOfFigureInterface {
         Figure fig2 = new Circle(radius);
         
         System.out.println("Area = "+ fig2.calculateArea());
+
+        System.out.println("---Triangle---");
+        System.out.print("Sides: ");
+        int side1 = sc.nextInt();
+        int side2 = sc.nextInt();
+        int side3 = sc.nextInt();
+
+        Triangle fig3 = new Triangle(side1, side2, side3);
+
+        System.out.println("Area = "+ fig3.calculateArea());
 
         sc.close();
     }
