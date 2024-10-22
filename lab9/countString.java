@@ -1,40 +1,34 @@
 import java.util.Scanner;
 
-public class countString {
+class CountString{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter a string:");
-        String input = sc.nextLine();
-        
-        analyzeText(input);
+        System.out.println("Enter string: ");
+        String str = sc.nextLine();
+
+        System.out.println("Characters: "+str.length());
+
+        System.out.println("Words: " + str.split(" ").length);
+
+        System.out.println("lines: " + str.split("\n").length);
+
+        System.out.println("Vowels: " + countVowels(str));
 
         sc.close();
     }
 
-    private static void analyzeText(String text) {
-        int characterCount = text.length();
-        int wordCount = text.split("\\s+").length;
-        int lineCount = text.split("\n").length;
-        int vowelCount = countVowels(text);
+    public static int countVowels(String str){
+        int count=0;
 
-        System.out.println("Character count: " + characterCount);
-        System.out.println("Word count: " + wordCount);
-        System.out.println("Line count: " + lineCount);
-        System.out.println("Vowel count: " + vowelCount);
-    }
-
-    private static int countVowels(String text) {
-        int count = 0;
         String vowels = "aeiouAEIOU";
-        for (char ch : text.toCharArray()) {
-            if (vowels.indexOf(ch) != -1) {
+
+        for(char ch : str.toCharArray()){
+            if(vowels.indexOf(ch) != -1){
                 count++;
             }
         }
+
         return count;
     }
 }
-
-
-

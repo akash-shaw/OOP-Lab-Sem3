@@ -2,27 +2,19 @@ import java.util.Scanner;
 
 public class wordReplacer {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // Input the original string
-        System.out.println("Enter a sentence:");
-        String original = scanner.nextLine();
+        System.out.println("Enter string: ");
+        String str = sc.nextLine();
 
-        // Input the word to be replaced
-        System.out.println("Enter the word to be replaced:");
-        String toReplace = scanner.nextLine();
+        System.out.println("Word to replace: ");
+        String toReplace = sc.nextLine();
 
-        // Input the replacement word
-        System.out.println("Enter the replacement word:");
-        String replacement = scanner.nextLine();
+        System.out.println("Replace with: ");
+        String replacement = sc.nextLine();
 
-        // Replace the word
-        String result = original.replace(toReplace, replacement);
+        System.out.println("New String: " + str.replace(toReplace, replacement));
 
-        // Output the result
-        System.out.println("Updated sentence:");
-        System.out.println(result);
-
-        scanner.close();
+        sc.close();
     }
 }
